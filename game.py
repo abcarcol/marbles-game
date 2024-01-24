@@ -42,7 +42,7 @@ offset_matrix = part1_matrix - matrix
 def divide_by_abs(x): #We convert positive offsets into +1 and negative offsets into -1
     if x != 0: 
         return x / abs(x)
-    else: #0 offsets are converted into 1s
+    else: #0 offsets are converted into +1
         return 1
 
 divide_by_abs_vect = np.vectorize(divide_by_abs)
